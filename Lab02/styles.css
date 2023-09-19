@@ -1,0 +1,120 @@
+body{
+    background-image: url(Autumn.jpg);
+}
+
+.wrapper{
+    width: 80%;
+    margin: auto;
+    background-color: #fff0e6;
+    box-shadow: 10px 5px 5px #fff0e6;
+    opacity: 0.8;
+}
+
+header{
+    text-align: center;
+    background-color: #ffc299;
+}
+
+header h1{
+   padding: 10px;
+   margin: 0px;
+   text-shadow:  2px 2px 5px #803300; 
+   color: #803300;
+}
+
+nav {
+    float: left;
+    width: 150px;
+    padding: 10px;
+    position: fixed;
+}
+
+main{
+    margin-left: 160px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    overflow: auto;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    background-color: #ffc299;
+    padding: 2px;
+}
+
+footer p{
+    text-align: center;    
+}
+
+main img{
+float: left;
+height: 100px;
+width: 100px;
+margin: 10px;
+}
+
+ul li {
+    list-style: none;
+    list-style-image: url("icon.png");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+}
+
+
+p{
+    text-align: left;
+    text-indent: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+.para2{
+ clear: left;
+}
+
+div,p{
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+div p{
+    background-color:  #f0f0f0;
+}
+
+div >p{
+    color: #ff0000;      
+}
+
+div+p{
+    font-weight:  bold;
+
+}
+
+p:last-child{
+    font-style: italic;
+}
+
+p:last-of-type{
+    text-decoration: underline;
+}
+
+p:first-child{
+    font-size: 18px;
+}
+
+p::first-letter{
+  color:#00ff00;
+}
+
+p::first-line{
+
+    background-color: yellow;
+}
+
+
+
+
+
+
