@@ -1,565 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="images/profile.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/profile.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header class="header">
     <menu>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </menu>
-    </header>
-    
-    <div class="main" id="home">
-      <section class="home-section align-items-center">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="home-text">
-              <p>Hello, I'm</p>
-              <h1 onClick="MyAudio()">Aditya Prakash</h1>
-              <h2>Full Stack Developer</h2>
-              <audio src="videos/audio.m4a" id="Audio"> </audio>
-              <a type="submit" class="btn">More about me</a>
-              <a href="#" class="btn">Portfolio</a>
-            </div>
-            <div class="home-vid">
-              <div class="vid-box">
-                <video src="videos/portfolio.mp4" autoplay loop>
-              </div>
+  </header>
+
+  <div class="main" id="home">
+    <section class="home-section align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="home-text">
+            <p>Hello, I'm</p>
+            <h1 onClick="MyAudio()">Aditya Prakash</h1>
+            <h2>Full Stack Developer</h2>
+            <audio src="videos/audio.m4a" id="Audio"> </audio>
+            <a type="submit" class="btn">More about me</a>
+            <a href="#" class="btn">Portfolio</a>
+          </div>
+          <div class="home-vid">
+            <div class="vid-box">
+              <video src="videos/portfolio.mp4" autoplay loop>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="about-section sec-padding" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="section-title">
-              <h2>About Me</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="about-img">
-              <div class="img-box">
-                <img src="images/about.png" alt="about image" />
-              </div>
-            </div>
-            <div class="about-text">
-              <summary>
-                Experienced professional with a strong skill set in various languages, frameworks, databases, ETL tools, and cloud platforms. Proven track record of delivering successful projects and optimizing performance, security, and user experience.
-              </summary>
-              <h3>Skills</h3>
-              <div class="skills">
-                <div class="skill-item">html</div>
-                <div class="skill-item">css</div>
-                <div class="skill-item">javascript</div>
-                <div class="skill-item">java</div>
-                <div class="skill-item">python</div>
-                <div class="skill-item">mssql</div>
-                <div class="skill-item">mysql</div>
-                <div class="skill-item">react</div>
-              </div>
-
-              <div class="about-tabs">
-                <button
-                  type="button"
-                  class="tab-item active"
-                  data-target="#education"
-                >
-                  education
-                </button>
-                <button
-                  type="button"
-                  class="tab-item"
-                  data-target="#experience"
-                >
-                  experience
-                </button>
-              </div>
-
-              <div class="tab-content active" id="education">
-                <div class="timeline">
-                  <div class="timeline-item">
-                    <span class="date">2022 - 2024</span>
-                    <h4>
-                      Master of Science in Information Systems - <span>Northeastern University</span>
-                    </h4>
-                    <p>
-                      
-
-    Coursework:
-    Fall 2022
-    Application Engineering Development
-    Data Management and Database Design
-
-    Spring 2023
-    Data Science Engineering Methods and Tools
-    Designing Advanced Data Architecture for Business Intelligence
-
-    Fall 2023
-    Network Structures and Cloud Computing
-    Web Design and User Experience EngineeringCoursework: Fall 2022 Application Engineering Development Data Management and Database Design Spring 2023 Data Science Engineering Methods and Tools Designing Advanced Data Architecture for Business Intelligence Fall 2023 Network Structures and Cloud Computing Web Design and User Experience Engineering
-
-    Skills: Analytical Skills · Databases · DevOps · Data Analysis · SQL · Java · Microsoft Power BI · Alteryx · Machine Learning · Artificial Intelligence (AI) · Microsoft SQL Server · MySQL · Jupyter · Kaggle · Talend · Tableau · Python (Programming Language)
-                    </p>
-                  </div>
-                  <div class="timeline-item">
-                    <span class="date">2014 - 2018</span>
-                    <h4>
-                      Bachelor of Engineering - <span>Mumbai University</span>
-                    </h4>
-                    <p>
-                      
-
-    Relevant Coursework:
-    Structured Programming Approach
-    Object Oriented Programming MethodologyRelevant Coursework: Structured Programming Approach Object Oriented Programming Methodology
-
-    Skills: Analytical Skills · Databases · SQL · Java
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="tab-content" id="experience">
-                <div class="timeline">
-                  <div class="timeline-item">
-                    <span class="date">2022 - Present</span>
-                    <h4>
-                      Graduate Student Ambassador -
-                      <span> Northeastern University</span>
-                    </h4>
-                    <p>
-                      •	Acted as a liaison between the university faculty, staff, and fellow graduate students, fostering effective networking, communication, and collaboration.
-•	Worked closely with a diverse team of student ambassadors, fostering a collaborative and inclusive environment.
-
-                    </p>
-                  </div>
-                  <div class="timeline-item">
-                    <span class="date">2021 - 2022</span>
-                    <h4>Consultant - <span>Capgemini India Pvt Ltd</span></h4>
-                    <p>
-                      •	Led 4 migration projects, upgrading 30+ Java based payment API services using Scrum principles, ensuring smooth transitions and successful outcomes.
-•	Enhanced performance, security, and user experience by 40% by converting a SOAP-based API into a lightweight REST API using IIB and Java and upgrading the TLS protocol, after analyzing the existing service and identifying opportunities for enhancement.
-•	Accomplished a remarkable 60% decrease in log processing time by optimizing the handling of high-volume log traffic through meticulous configuration and fine-tuning of Elastic search, Kibana dashboards, and associated components for monitoring logs, and efficiently resolving tickets to ensure uninterrupted and smooth functionality.
-•	Implemented re-usable Microservices based Integration Framework using Spring Boot, performing synchronized auditing, and testing across various platforms and tools.
-
-                    </p>
-                  </div>
-                  <div class="timeline-item">
-                    <span class="date">2019 - 2021</span>
-                    <h4>
-                      Associate Consultant -
-                      <span>Capgemini India Pvt Ltd</span>
-                    </h4>
-                    <p>
-                      •	Accomplished 40% increase in request processing efficiency by implementing global cache on API gateway for intricate enterprise middleware SOAP-based applications, capable of performing 10M payments transactions/day.
-•	Improved processing time by 30% and enhanced security through development of Java based encryption solution using cryptographic algorithm for APIs performing cards and payments transactions.
-•	Automated build and deployment pipeline strategy using Jenkins, streamlined processes, improving software development, delivery efficiency by 70%.
-•	Developed custom components like APIs, connectors, and workflow in Java to extend the functionality and meet specific business requirements.
-
-                    </p>
-                  </div>
-                  <div class="timeline-item">
-                    <span class="date">2018 - 2019</span>
-                    <h4>
-                      Senior Software Engineer -
-                      <span>Capgemini India Pvt Ltd</span>
-                    </h4>
-                    <p>
-                      •	Engineered 50+ applications for APAC and LATAM market using IBM Integration Bus to seamlessly orchestrate data from multiple sources in BLOB, JSON, and XML format to enable data interoperability.
-•	Successfully executed performance testing, identifying bottlenecks, and optimizing system performance, leading to a 60% improvement in overall speed.
-•	Conducted quality assurance and documentation by performing automated tests, troubleshooting, and debugging of applications using SoapUI and Postman and performance tuning to ensure optimal throughput and latency.
-•	Conducted thorough regression testing, resulting in a 90% decrease in post-release defects and enhanced product stability.
-
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <a href="#" class="btn">download CV</a>
-              <a href="#contact" class="btn">contact me</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="portfolio-section sec-padding" id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div class="section-title">
-              <h2>Projects and Certifications</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="portfolio-item">
-              <div class="portfolio-item-thumbnail">
-                <img
-                  src="images/portfolio/1.png"
-                  alt="portfolio-item-thumbnail"
-                />
-              </div>
-              <h3 class="portfolio-item-title">Project Star</h3>
-              <button type="button" class="btn view-project-btn">
-              <a href="https://www.linkedin.com/feed/update/urn:li:activity:6772757382884843520/" target="_blank"
-                >view certification</a>
-              </button>
-              <div class="portfolio-item-details">
-                <div class="description">
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eligendi aliquam atque repellendus incidunt laborum unde
-                    voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
-                    explicabo? Unde rerum natus voluptatum consequatur
-                    voluptate? Accusamus deleniti magni aliquam minima veritatis
-                    labore dignissimos natus architecto, nesciunt pariatur quos.
-                    Ex modi maxime, impedit illo animi adipisci sit?
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span>15 September 2023</span></li>
-                    <li>Technologies - <span>HTML, CSS, Javascript</span></li>
-                    <li>Role - <span>Frontend</span></li>
-                    <li>
-                      View Online -
-                      <span
-                        ></span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="portfolio-item">
-              <div class="portfolio-item-thumbnail">
-                <img
-                  src="images/portfolio/2.png"
-                  alt="portfolio-item-thumbnail"
-                />
-              </div>
-              <h3 class="portfolio-item-title">Mulesoft Certified Developer</h3>
-              <button type="button" class="btn view-project-btn">
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6695926839128530944/" target="_blank"
-                >view certification</a>
-              </button>
-              <div class="portfolio-item-details">
-                <div class="description">
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eligendi aliquam atque repellendus incidunt laborum unde
-                    voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
-                    explicabo? Unde rerum natus voluptatum consequatur
-                    voluptate? Accusamus deleniti magni aliquam minima veritatis
-                    labore dignissimos natus architecto, nesciunt pariatur quos.
-                    Ex modi maxime, impedit illo animi adipisci sit?
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span>15 September 2023</span></li>
-                    <li>Technologies - <span>HTML, CSS, Javascript</span></li>
-                    <li>Role - <span>Frontend</span></li>
-                    <li>
-                      View Online -
-                      <span
-                        ><a href="#" target="_blank"
-                          >https://github.com/adityaprakashneu</a
-                        ></span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="portfolio-item">
-              <div class="portfolio-item-thumbnail">
-                <img
-                  src="images/portfolio/3.jpeg"
-                  alt="portfolio-item-thumbnail"
-                />
-              </div>
-              <h3 class="portfolio-item-title">SpringBoot Certification</h3>
-              <button type="button" class="btn view-project-btn">
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6659024367038672896/" target="_blank"
-                >view certification</a>
-              </button>
-              <div class="portfolio-item-details">
-                <div class="description">
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eligendi aliquam atque repellendus incidunt laborum unde
-                    voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
-                    explicabo? Unde rerum natus voluptatum consequatur
-                    voluptate? Accusamus deleniti magni aliquam minima veritatis
-                    labore dignissimos natus architecto, nesciunt pariatur quos.
-                    Ex modi maxime, impedit illo animi adipisci sit?
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span>15 September 2023</span></li>
-                    <li>Technologies - <span>HTML, CSS, Javascript</span></li>
-                    <li>Role - <span>Frontend</span></li>
-                    <li>
-                      View Online -
-                      <span
-                        ><a href="#" target="_blank"
-                          >https://github.com/adityaprakashneu</a
-                        ></span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="portfolio-item">
-              <div class="portfolio-item-thumbnail">
-                <img
-                  src="images/portfolio/4.png"
-                  alt="portfolio-item-thumbnail"
-                />
-              </div>
-              <h3 class="portfolio-item-title">Mendix Developer</h3>
-              <button type="button" class="btn view-project-btn">
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6678898239103737857/" target="_blank"
-                >view certification</a>
-              </button>
-              <div class="portfolio-item-details">
-                <div class="description">
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eligendi aliquam atque repellendus incidunt laborum unde
-                    voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
-                    explicabo? Unde rerum natus voluptatum consequatur
-                    voluptate? Accusamus deleniti magni aliquam minima veritatis
-                    labore dignissimos natus architecto, nesciunt pariatur quos.
-                    Ex modi maxime, impedit illo animi adipisci sit?
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span>15 September 2023</span></li>
-                    <li>Technologies - <span>HTML, CSS, Javascript</span></li>
-                    <li>Role - <span>Frontend</span></li>
-                    <li>
-                      View Online -
-                      <span
-                        ><a href="#" target="_blank"
-                          >https://github.com/adityaprakashneu</a
-                        ></span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="portfolio-item">
-              <div class="portfolio-item-thumbnail">
-                <img
-                  src="images/portfolio/5.png"
-                  alt="portfolio-item-thumbnail"
-                />
-              </div>
-              <h3 class="portfolio-item-title">E-commerce Website</h3>
-              <button type="button" class="btn view-project-btn">
-                <a href="https://github.com/adityaprakashneu" target="_blank"
-                >view project</a>
-              </button>
-              <div class="portfolio-item-details">
-                <div class="description">
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eligendi aliquam atque repellendus incidunt laborum unde
-                    voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
-                    explicabo? Unde rerum natus voluptatum consequatur
-                    voluptate? Accusamus deleniti magni aliquam minima veritatis
-                    labore dignissimos natus architecto, nesciunt pariatur quos.
-                    Ex modi maxime, impedit illo animi adipisci sit?
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span>15 September 2023</span></li>
-                    <li>Technologies - <span>HTML, CSS, Javascript</span></li>
-                    <li>Role - <span>Frontend</span></li>
-                    <li>
-                      View Online -
-                      <span
-                        ><a href="#" target="_blank"
-                          >https://github.com/adityaprakashneu</a
-                        ></span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="portfolio-item">
-              <div class="portfolio-item-thumbnail">
-                <img
-                  src="images/portfolio/6.png"
-                  alt="portfolio-item-thumbnail"
-                />
-              </div>
-              <h3 class="portfolio-item-title">Portfolio</h3>
-              <button type="button" class="btn view-project-btn">
-                <a href="https://github.com/adityaprakashneu" target="_blank"
-                >view project</a>
-              </button>
-              <div class="portfolio-item-details">
-                <div class="description">
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eligendi aliquam atque repellendus incidunt laborum unde
-                    voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
-                    explicabo? Unde rerum natus voluptatum consequatur
-                    voluptate? Accusamus deleniti magni aliquam minima veritatis
-                    labore dignissimos natus architecto, nesciunt pariatur quos.
-                    Ex modi maxime, impedit illo animi adipisci sit?
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span>15 September 2023</span></li>
-                    <li>Technologies - <span>HTML, CSS, Javascript</span></li>
-                    <li>Role - <span>Frontend</span></li>
-                    <li>
-                      View Online -
-                      <span
-                        ><a href="#" target="_blank"
-                          >https://github.com/adityaprakashneu</a
-                        ></span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact-section sec-padding" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="section-title">
-              <h2>contact me</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="contact-form">
-                <form>
-                  <div class="row">
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        placeholder="Name"
-                        class="input-control"
-                        required
-                      />
-                    </div>
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        placeholder="Email"
-                        class="input-control"
-                        required
-                      />
-                    </div>
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        placeholder="Subject"
-                        class="input-control"
-                        required
-                      />
-                    </div>
-                    <div class="input-group">
-                      <textarea
-                        placeholder="Message"
-                        class="input-control"
-                        required
-                      ></textarea>
-                    </div>
-                    <div class="submit-btn">
-                      <button type="submit" class="btn">send message</button>
-                    </div>
-                  </div>
-                </form>
-            </div>
-              <div class="contact-info">
-                <div class="contact-info-item">
-                  <h3>Email</h3>
-                  <a href="mailto:contactus@urbanfashion.com">prakash.adi@northeastern.edu</a>
-                </div>
-                <div class="contact-info-item">
-                  <h3>Phone</h3>
-                  <a href="tel:+18573135247">+1 (857)-313-5247</a>
-                </div>
-                <div class="contact-info-item">
-                  <h3>Follow Me</h3>
-                  <div class="social-links">
-                    <a href="#" target="_blank"
-                      ><i class="fab fa-facebook"></i
-                    ></a>
-                    <a href="#" target="_blank"
-                      ><i class="fab fa-twitter"></i
-                    ></a>
-                    <a href="#" target="_blank"
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-                    <a href="#" target="_blank"
-                      ><i class="fab fa-youtube"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <footer class="footer">
-      <table class="social">
-          <tr>
-              <th>Facebook</th>
-              <th>Instagram</th>
-              <th>Twitter</th>
-              <th>Youtube</th>
-          </tr>
-          <tr>
-              <td><a href=""><i class="fa-brands fa-facebook"></i></a></td>
-              <td><a href=""><i class="fa-brands fa-instagram"></i></a></td>
-              <td><a href=""><i class="fa-brands fa-twitter"></i></a></td>
-              <td><a href=""><i class="fa-brands fa-youtube"></i></a></td>
-          </tr>
-      </table>
-      <div class="footerBottom">
-          <p>
-              Copyrights &copy;2023; Designed by <span class="designer">Aditya Prakash    
-          </p>
       </div>
+    </section>
+
+    <section class="about-section sec-padding" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img">
+            <div class="img-box">
+              <img src="images/about.png" alt="about image" />
+            </div>
+          </div>
+          <div class="about-text">
+            <summary>
+              Experienced professional with a strong skill set in various languages, frameworks, databases, ETL tools,
+              and cloud platforms. Proven track record of delivering successful projects and optimizing performance,
+              security, and user experience.
+            </summary>
+            <h3>Skills</h3>
+            <div class="skills">
+              <div class="skill-item">html</div>
+              <div class="skill-item">css</div>
+              <div class="skill-item">javascript</div>
+              <div class="skill-item">java</div>
+              <div class="skill-item">python</div>
+              <div class="skill-item">mssql</div>
+              <div class="skill-item">mysql</div>
+              <div class="skill-item">react</div>
+            </div>
+
+            <div class="about-tabs">
+              <button type="button" class="tab-item active" data-target="#education">
+                education
+              </button>
+              <button type="button" class="tab-item" data-target="#experience">
+                experience
+              </button>
+            </div>
+
+            <div class="tab-content active" id="education">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2022 - 2024</span>
+                  <h4>
+                    Master of Science in Information Systems - <span>Northeastern University</span>
+                  </h4>
+                  <p>
+
+
+                    Coursework:
+                    Fall 2022
+                    Application Engineering Development
+                    Data Management and Database Design
+
+                    Spring 2023
+                    Data Science Engineering Methods and Tools
+                    Designing Advanced Data Architecture for Business Intelligence
+
+                    Fall 2023
+                    Network Structures and Cloud Computing
+                    Web Design and User Experience EngineeringCoursework: Fall 2022 Application Engineering Development
+                    Data Management and Database Design Spring 2023 Data Science Engineering Methods and Tools Designing
+                    Advanced Data Architecture for Business Intelligence Fall 2023 Network Structures and Cloud
+                    Computing Web Design and User Experience Engineering
+
+                    Skills: Analytical Skills · Databases · DevOps · Data Analysis · SQL · Java · Microsoft Power BI ·
+                    Alteryx · Machine Learning · Artificial Intelligence (AI) · Microsoft SQL Server · MySQL · Jupyter ·
+                    Kaggle · Talend · Tableau · Python (Programming Language)
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2014 - 2018</span>
+                  <h4>
+                    Bachelor of Engineering - <span>Mumbai University</span>
+                  </h4>
+                  <p>
+
+
+                    Relevant Coursework:
+                    Structured Programming Approach
+                    Object Oriented Programming MethodologyRelevant Coursework: Structured Programming Approach Object
+                    Oriented Programming Methodology
+
+                    Skills: Analytical Skills · Databases · SQL · Java
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="experience">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2022 - Present</span>
+                  <h4>
+                    Graduate Student Ambassador -
+                    <span> Northeastern University</span>
+                  </h4>
+                  <p>
+                    • Acted as a liaison between the university faculty, staff, and fellow graduate students, fostering
+                    effective networking, communication, and collaboration.
+                    • Worked closely with a diverse team of student ambassadors, fostering a collaborative and inclusive
+                    environment.
+
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2021 - 2022</span>
+                  <h4>Consultant - <span>Capgemini India Pvt Ltd</span></h4>
+                  <p>
+                    • Led 4 migration projects, upgrading 30+ Java based payment API services using Scrum principles,
+                    ensuring smooth transitions and successful outcomes.
+                    • Enhanced performance, security, and user experience by 40% by converting a SOAP-based API into a
+                    lightweight REST API using IIB and Java and upgrading the TLS protocol, after analyzing the existing
+                    service and identifying opportunities for enhancement.
+                    • Accomplished a remarkable 60% decrease in log processing time by optimizing the handling of
+                    high-volume log traffic through meticulous configuration and fine-tuning of Elastic search, Kibana
+                    dashboards, and associated components for monitoring logs, and efficiently resolving tickets to
+                    ensure uninterrupted and smooth functionality.
+                    • Implemented re-usable Microservices based Integration Framework using Spring Boot, performing
+                    synchronized auditing, and testing across various platforms and tools.
+
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2019 - 2021</span>
+                  <h4>
+                    Associate Consultant -
+                    <span>Capgemini India Pvt Ltd</span>
+                  </h4>
+                  <p>
+                    • Accomplished 40% increase in request processing efficiency by implementing global cache on API
+                    gateway for intricate enterprise middleware SOAP-based applications, capable of performing 10M
+                    payments transactions/day.
+                    • Improved processing time by 30% and enhanced security through development of Java based encryption
+                    solution using cryptographic algorithm for APIs performing cards and payments transactions.
+                    • Automated build and deployment pipeline strategy using Jenkins, streamlined processes, improving
+                    software development, delivery efficiency by 70%.
+                    • Developed custom components like APIs, connectors, and workflow in Java to extend the
+                    functionality and meet specific business requirements.
+
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2018 - 2019</span>
+                  <h4>
+                    Senior Software Engineer -
+                    <span>Capgemini India Pvt Ltd</span>
+                  </h4>
+                  <p>
+                    • Engineered 50+ applications for APAC and LATAM market using IBM Integration Bus to seamlessly
+                    orchestrate data from multiple sources in BLOB, JSON, and XML format to enable data
+                    interoperability.
+                    • Successfully executed performance testing, identifying bottlenecks, and optimizing system
+                    performance, leading to a 60% improvement in overall speed.
+                    • Conducted quality assurance and documentation by performing automated tests, troubleshooting, and
+                    debugging of applications using SoapUI and Postman and performance tuning to ensure optimal
+                    throughput and latency.
+                    • Conducted thorough regression testing, resulting in a 90% decrease in post-release defects and
+                    enhanced product stability.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#" class="btn">download CV</a>
+            <a href="#contact" class="btn">contact me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio-section sec-padding" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>Projects and Certifications</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/portfolio/1.png" alt="portfolio-item-thumbnail" />
+            </div>
+            <h3 class="portfolio-item-title">Project Star</h3>
+            <button type="button" class="btn view-project-btn">
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:6772757382884843520/" target="_blank">view
+                certification</a>
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eligendi aliquam atque repellendus incidunt laborum unde
+                  voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
+                  explicabo? Unde rerum natus voluptatum consequatur
+                  voluptate? Accusamus deleniti magni aliquam minima veritatis
+                  labore dignissimos natus architecto, nesciunt pariatur quos.
+                  Ex modi maxime, impedit illo animi adipisci sit?
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>15 September 2023</span></li>
+                  <li>Technologies - <span>HTML, CSS, Javascript</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>
+                    View Online -
+                    <span></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/portfolio/2.png" alt="portfolio-item-thumbnail" />
+            </div>
+            <h3 class="portfolio-item-title">Mulesoft Certified Developer</h3>
+            <button type="button" class="btn view-project-btn">
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:6695926839128530944/" target="_blank">view
+                certification</a>
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eligendi aliquam atque repellendus incidunt laborum unde
+                  voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
+                  explicabo? Unde rerum natus voluptatum consequatur
+                  voluptate? Accusamus deleniti magni aliquam minima veritatis
+                  labore dignissimos natus architecto, nesciunt pariatur quos.
+                  Ex modi maxime, impedit illo animi adipisci sit?
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>15 September 2023</span></li>
+                  <li>Technologies - <span>HTML, CSS, Javascript</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>
+                    View Online -
+                    <span><a href="#" target="_blank">https://github.com/adityaprakashneu</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/portfolio/3.jpeg" alt="portfolio-item-thumbnail" />
+            </div>
+            <h3 class="portfolio-item-title">SpringBoot Certification</h3>
+            <button type="button" class="btn view-project-btn">
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:6659024367038672896/" target="_blank">view
+                certification</a>
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eligendi aliquam atque repellendus incidunt laborum unde
+                  voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
+                  explicabo? Unde rerum natus voluptatum consequatur
+                  voluptate? Accusamus deleniti magni aliquam minima veritatis
+                  labore dignissimos natus architecto, nesciunt pariatur quos.
+                  Ex modi maxime, impedit illo animi adipisci sit?
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>15 September 2023</span></li>
+                  <li>Technologies - <span>HTML, CSS, Javascript</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>
+                    View Online -
+                    <span><a href="#" target="_blank">https://github.com/adityaprakashneu</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/portfolio/4.png" alt="portfolio-item-thumbnail" />
+            </div>
+            <h3 class="portfolio-item-title">Mendix Developer</h3>
+            <button type="button" class="btn view-project-btn">
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:6678898239103737857/" target="_blank">view
+                certification</a>
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eligendi aliquam atque repellendus incidunt laborum unde
+                  voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
+                  explicabo? Unde rerum natus voluptatum consequatur
+                  voluptate? Accusamus deleniti magni aliquam minima veritatis
+                  labore dignissimos natus architecto, nesciunt pariatur quos.
+                  Ex modi maxime, impedit illo animi adipisci sit?
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>15 September 2023</span></li>
+                  <li>Technologies - <span>HTML, CSS, Javascript</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>
+                    View Online -
+                    <span><a href="#" target="_blank">https://github.com/adityaprakashneu</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/portfolio/5.png" alt="portfolio-item-thumbnail" />
+            </div>
+            <h3 class="portfolio-item-title">E-commerce Website</h3>
+            <button type="button" class="btn view-project-btn">
+              <a href="https://github.com/adityaprakashneu" target="_blank">view project</a>
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eligendi aliquam atque repellendus incidunt laborum unde
+                  voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
+                  explicabo? Unde rerum natus voluptatum consequatur
+                  voluptate? Accusamus deleniti magni aliquam minima veritatis
+                  labore dignissimos natus architecto, nesciunt pariatur quos.
+                  Ex modi maxime, impedit illo animi adipisci sit?
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>15 September 2023</span></li>
+                  <li>Technologies - <span>HTML, CSS, Javascript</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>
+                    View Online -
+                    <span><a href="#" target="_blank">https://github.com/adityaprakashneu</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/portfolio/6.png" alt="portfolio-item-thumbnail" />
+            </div>
+            <h3 class="portfolio-item-title">Portfolio</h3>
+            <button type="button" class="btn view-project-btn">
+              <a href="https://github.com/adityaprakashneu" target="_blank">view project</a>
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Eligendi aliquam atque repellendus incidunt laborum unde
+                  voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
+                  explicabo? Unde rerum natus voluptatum consequatur
+                  voluptate? Accusamus deleniti magni aliquam minima veritatis
+                  labore dignissimos natus architecto, nesciunt pariatur quos.
+                  Ex modi maxime, impedit illo animi adipisci sit?
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>15 September 2023</span></li>
+                  <li>Technologies - <span>HTML, CSS, Javascript</span></li>
+                  <li>Role - <span>Frontend</span></li>
+                  <li>
+                    View Online -
+                    <span><a href="#" target="_blank">https://github.com/adityaprakashneu</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section sec-padding" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>contact me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact-form">
+            <form>
+              <div class="row">
+                <div class="input-group">
+                  <input type="text" placeholder="Name" class="input-control" required />
+                </div>
+                <div class="input-group">
+                  <input type="text" placeholder="Email" class="input-control" required />
+                </div>
+                <div class="input-group">
+                  <input type="text" placeholder="Subject" class="input-control" required />
+                </div>
+                <div class="input-group">
+                  <textarea placeholder="Message" class="input-control" required></textarea>
+                </div>
+                <div class="submit-btn">
+                  <button type="submit" class="btn">send message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <h3>Email</h3>
+              <a href="mailto:contactus@urbanfashion.com">prakash.adi@northeastern.edu</a>
+            </div>
+            <div class="contact-info-item">
+              <h3>Phone</h3>
+              <a href="tel:+18573135247">+1 (857)-313-5247</a>
+            </div>
+            <div class="contact-info-item">
+              <h3>Follow Me</h3>
+              <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  </div>
+  <footer class="footer">
+    <table class="social">
+      <tr>
+        <th>Facebook</th>
+        <th>Instagram</th>
+        <th>Twitter</th>
+        <th>Youtube</th>
+      </tr>
+      <tr>
+        <td><a href=""><i class="fa-brands fa-facebook"></i></a></td>
+        <td><a href=""><i class="fa-brands fa-instagram"></i></a></td>
+        <td><a href=""><i class="fa-brands fa-twitter"></i></a></td>
+        <td><a href=""><i class="fa-brands fa-youtube"></i></a></td>
+      </tr>
+    </table>
+    <div class="footerBottom">
+      <p>
+        Copyrights &copy;2023; Designed by <span class="designer">Aditya Prakash
+      </p>
+    </div>
   </footer>
-    <script src="./script/script.js"></script>
-  </body>
+  <script src="./script/script.js"></script>
+</body>
+
 </html>
