@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="images/profile.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -15,27 +15,38 @@
     />
   </head>
   <body>
-    <div class="main">
-      <section class="home-section align-items-center hidden">
+    
+    <header class="header">
+    <menu>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </menu>
+    </header>
+    
+    <div class="main" id="home">
+      <section class="home-section align-items-center">
         <div class="container">
           <div class="row align-items-center">
             <div class="home-text">
               <p>Hello, I'm</p>
-              <h1>Aditya Prakash</h1>
+              <h1 onClick="MyAudio()">Aditya Prakash</h1>
               <h2>Full Stack Developer</h2>
-              <a href="#" class="btn">More about me</a>
+              <audio src="videos/audio.m4a" id="Audio"> </audio>
+              <a type="submit" class="btn">More about me</a>
               <a href="#" class="btn">Portfolio</a>
             </div>
-            <div class="home-img">
-              <div class="img-box">
-                <img src="images/profile.png" alt="profile-photo" />
+            <div class="home-vid">
+              <div class="vid-box">
+                <video src="videos/portfolio.mp4" autoplay loop>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="about-section sec-padding hidden">
+      <section class="about-section sec-padding" id="about">
         <div class="container">
           <div class="row">
             <div class="section-title">
@@ -45,16 +56,16 @@
           <div class="row">
             <div class="about-img">
               <div class="img-box">
-                <img src="images/IMG-5603-removebg.png" alt="about image" />
+                <img src="images/about.png" alt="about image" />
               </div>
             </div>
             <div class="about-text">
-              <p>
+              <summary>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
                 optio delectus dicta nemo nihil? Ipsa consequuntur quae
                 voluptatem mollitia perspiciatis obcaecati iste alias nam,
                 deleniti soluta impedit, excepturi, hic autem?
-              </p>
+              </summary>
               .
               <h3>Skills</h3>
               <div class="skills">
@@ -163,24 +174,65 @@
         </div>
       </section>
 
-      <section class="portfolio-section sec-padding hidden">
+      <section class="portfolio-section sec-padding" id="portfolio">
         <div class="container">
           <div class="row">
             <div class="section-title">
-              <h2>Projects</h2>
+              <h2>Projects and Certifications</h2>
             </div>
           </div>
           <div class="row">
             <div class="portfolio-item">
               <div class="portfolio-item-thumbnail">
                 <img
-                  src="images/portfolio/1.jpg"
+                  src="images/portfolio/1.png"
                   alt="portfolio-item-thumbnail"
                 />
               </div>
-              <h3 class="portfolio-item-title">E-commerce Website</h3>
+              <h3 class="portfolio-item-title">Project Star</h3>
               <button type="button" class="btn view-project-btn">
-                view project
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:6772757382884843520/" target="_blank"
+                >view certification</a>
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eligendi aliquam atque repellendus incidunt laborum unde
+                    voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
+                    explicabo? Unde rerum natus voluptatum consequatur
+                    voluptate? Accusamus deleniti magni aliquam minima veritatis
+                    labore dignissimos natus architecto, nesciunt pariatur quos.
+                    Ex modi maxime, impedit illo animi adipisci sit?
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>Created - <span>15 September 2023</span></li>
+                    <li>Technologies - <span>HTML, CSS, Javascript</span></li>
+                    <li>Role - <span>Frontend</span></li>
+                    <li>
+                      View Online -
+                      <span
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img
+                  src="images/portfolio/2.png"
+                  alt="portfolio-item-thumbnail"
+                />
+              </div>
+              <h3 class="portfolio-item-title">Mulesoft Certified Developer</h3>
+              <button type="button" class="btn view-project-btn">
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6695926839128530944/" target="_blank"
+                >view certification</a>
               </button>
               <div class="portfolio-item-details">
                 <div class="description">
@@ -215,13 +267,14 @@
             <div class="portfolio-item">
               <div class="portfolio-item-thumbnail">
                 <img
-                  src="images/portfolio/2.jpg"
+                  src="images/portfolio/3.jpeg"
                   alt="portfolio-item-thumbnail"
                 />
               </div>
-              <h3 class="portfolio-item-title">E-commerce Website</h3>
+              <h3 class="portfolio-item-title">SpringBoot Certification</h3>
               <button type="button" class="btn view-project-btn">
-                view project
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6659024367038672896/" target="_blank"
+                >view certification</a>
               </button>
               <div class="portfolio-item-details">
                 <div class="description">
@@ -256,13 +309,14 @@
             <div class="portfolio-item">
               <div class="portfolio-item-thumbnail">
                 <img
-                  src="images/portfolio/3.jpg"
+                  src="images/portfolio/4.png"
                   alt="portfolio-item-thumbnail"
                 />
               </div>
-              <h3 class="portfolio-item-title">E-commerce Website</h3>
+              <h3 class="portfolio-item-title">Mendix Developer</h3>
               <button type="button" class="btn view-project-btn">
-                view project
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6678898239103737857/" target="_blank"
+                >view certification</a>
               </button>
               <div class="portfolio-item-details">
                 <div class="description">
@@ -297,13 +351,14 @@
             <div class="portfolio-item">
               <div class="portfolio-item-thumbnail">
                 <img
-                  src="images/portfolio/4.jpg"
+                  src="images/portfolio/5.png"
                   alt="portfolio-item-thumbnail"
                 />
               </div>
               <h3 class="portfolio-item-title">E-commerce Website</h3>
               <button type="button" class="btn view-project-btn">
-                view project
+                <a href="https://github.com/adityaprakashneu" target="_blank"
+                >view project</a>
               </button>
               <div class="portfolio-item-details">
                 <div class="description">
@@ -338,54 +393,14 @@
             <div class="portfolio-item">
               <div class="portfolio-item-thumbnail">
                 <img
-                  src="images/portfolio/5.jpg"
+                  src="images/portfolio/6.png"
                   alt="portfolio-item-thumbnail"
                 />
               </div>
-              <h3 class="portfolio-item-title">E-commerce Website</h3>
+              <h3 class="portfolio-item-title">Portfolio</h3>
               <button type="button" class="btn view-project-btn">
-                view project
-              </button>
-              <div class="portfolio-item-details">
-                <div class="description">
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Eligendi aliquam atque repellendus incidunt laborum unde
-                    voluptate suscipit tempore, sed, reprehenderit ipsum nostrum
-                    explicabo? Unde rerum natus voluptatum consequatur
-                    voluptate? Accusamus deleniti magni aliquam minima veritatis
-                    labore dignissimos natus architecto, nesciunt pariatur quos.
-                    Ex modi maxime, impedit illo animi adipisci sit?
-                  </p>
-                </div>
-                <div class="general-info">
-                  <ul>
-                    <li>Created - <span>15 September 2023</span></li>
-                    <li>Technologies - <span>HTML, CSS, Javascript</span></li>
-                    <li>Role - <span>Frontend</span></li>
-                    <li>
-                      View Online -
-                      <span
-                        ><a href="#" target="_blank"
-                          >https://github.com/adityaprakashneu</a
-                        ></span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="portfolio-item">
-              <div class="portfolio-item-thumbnail">
-                <img
-                  src="images/portfolio/6.jpg"
-                  alt="portfolio-item-thumbnail"
-                />
-              </div>
-              <h3 class="portfolio-item-title">E-commerce Website</h3>
-              <button type="button" class="btn view-project-btn">
-                view project
+                <a href="https://github.com/adityaprakashneu" target="_blank"
+                >view project</a>
               </button>
               <div class="portfolio-item-details">
                 <div class="description">
@@ -419,7 +434,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-section sec-padding">
+      <section class="contact-section sec-padding" id="contact">
         <div class="container">
           <div class="row">
             <div class="section-title">
@@ -470,11 +485,11 @@
               <div class="contact-info">
                 <div class="contact-info-item">
                   <h3>Email</h3>
-                  <p>prakash.adi@northeastern.edu</p>
+                  <a href="mailto:contactus@urbanfashion.com">prakash.adi@northeastern.edu</a>
                 </div>
                 <div class="contact-info-item">
                   <h3>Phone</h3>
-                  <p>+1-(857)-313-5247</p>
+                  <a href="tel:+18573135247">+1 (857)-313-5247</a>
                 </div>
                 <div class="contact-info-item">
                   <h3>Follow Me</h3>
@@ -499,6 +514,27 @@
         </div>
       </section>
     </div>
+    <footer class="footer">
+      <table class="social">
+          <tr>
+              <th>Facebook</th>
+              <th>Instagram</th>
+              <th>Twitter</th>
+              <th>Youtube</th>
+          </tr>
+          <tr>
+              <td><a href=""><i class="fa-brands fa-facebook"></i></a></td>
+              <td><a href=""><i class="fa-brands fa-instagram"></i></a></td>
+              <td><a href=""><i class="fa-brands fa-twitter"></i></a></td>
+              <td><a href=""><i class="fa-brands fa-youtube"></i></a></td>
+          </tr>
+      </table>
+      <div class="footerBottom">
+          <p>
+              Copyrights &copy;2023; Designed by <span class="designer">Aditya Prakash    
+          </p>
+      </div>
+  </footer>
     <script src="./script/script.js"></script>
   </body>
 </html>

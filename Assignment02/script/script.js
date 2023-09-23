@@ -1,3 +1,7 @@
+function MyAudio() {
+    document.getElementById("Audio").play();
+}
+
 const tabsContainer = document.querySelector(".about-tabs"),
 aboutSection = document.querySelector(".about-section");
 
