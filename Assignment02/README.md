@@ -12,8 +12,6 @@ Welcome to my personal portfolio website! I'm Aditya Prakash, and this site is a
 
 - Resume: Download my up-to-date resume to learn more about my education, work experience, and achievements.
 
-- Blog: Check out my blog, where I share insights, tutorials, and industry-related articles.
-
 - Contact: Reach out to me for inquiries, collaborations, or just to say hello. I'd love to connect with you!
 
 ## HTML Tags
@@ -49,7 +47,8 @@ These are essential elements and attributes used for the development of website:
 
 - Mailto for Contact Information: An HTML attribute used to create clickable email addresses, launching the user's default email client when clicked.
 
-## CSS - external (index.css)
+## CSS - external (style.css)
+## Javascript for special effects (script.js)
 
 
 
