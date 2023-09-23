@@ -677,6 +677,11 @@ button {
         margin-top: 30px;
     }
 
+    .header {
+        height: 120px;
+        padding: 10px 8%;
+    }
+
     .footer {
         font-size: 12px;
     }
