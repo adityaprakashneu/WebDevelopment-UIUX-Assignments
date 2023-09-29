@@ -2,6 +2,21 @@ body {
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #18293c;
+}
+
+.hidden {
+  display: none;
+}
+
 .socialmediaicons ul {
   margin: 0;
   padding: 0;
@@ -20,9 +35,4 @@ body {
 
 .socialmediaicons{
 	text-align: center;
-}
-
-header {
-  text-align: center;
-  font-size: 2em;
 }
