@@ -1,5 +1,9 @@
 body {
-  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.container {
+	margin-top: 50px;
 }
 
 .header {
@@ -10,11 +14,10 @@ body {
 }
 
 h1 {
+  margin-top: 70px;
   color: #18293c;
-}
-
-.hidden {
-  display: none;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .socialmediaicons ul {
@@ -33,6 +36,6 @@ h1 {
   border-radius: 50%;
 }
 
-.socialmediaicons{
-	text-align: center;
+.socialmediaicons {
+  text-align: center;
 }

@@ -3,22 +3,55 @@
 }
 
 #myTable {
-	border:2px solid green;
+	border: 2px solid green;
 	border-collapse: collapse;
 	margin: 30px 30px 20px 40px;
 }
-#myTable td, th {
-	border:1px solid green;
+
+#myTable td,
+th {
+	border: 1px solid green;
 	padding: 5px;
 }
+
 #myTable th {
 	color: #fff;
 	background-color: #a7c942;
 }
+
 #button {
-	color:#fff;
-	background-color: orange;
+	color: grey;
+	background-color: '';
 	border-radius: 3px;
-	border:2px solid orange;
-	margin-left: 180px;
+	border: 1px solid #d2d2d2;
+	margin: 20px;
+}
+
+#add {
+	color: 'black';
+	background-color: '#6b6e70';
+	border-radius: 3px;
+	border: 1px solid #d2d2d2;
+	margin: 20px;
+}
+
+.table-content, .btns {
+	display: flex;
+	justify-content: center;
+}
+
+.del {
+	margin-left: 7px;
+}
+
+.dropDownTextArea {
+	display: none;
+}
+
+.edit {
+	display: none;
+}
+
+.del {
+	display: none;
 }
