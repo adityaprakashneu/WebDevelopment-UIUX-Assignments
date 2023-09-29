@@ -151,16 +151,29 @@ function addNewStudent() {
   alert(`Student ${studentCount} Record Added Successfully`);
 }
 
+//continue from here
 function removeRow(button) {
   // Find the parent row and remove it
   const tbody = document.querySelector("table#myTable tbody");
   const row = button.parentNode.parentNode; // Get the current row to delete
 
+  row.firstElementChild.firstElementChild.attributes.checked = 'false';
+  console.log("Check here: ")
+  console.log(row.firstElementChild.firstElementChild.attributes)
+  
   const nextRow = row.nextElementSibling;
   var student_id = nextRow.id;
   student_id = student_id[student_id.length - 1]
   tbody.removeChild(row);
   tbody.removeChild(nextRow);
+
+  const checkboxes = document.querySelectorAll(".checkbox");
+  const atLeastOneChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+  if (atLeastOneChecked) {
+    enableButton();
+  } else {
+    disableButton();
+  }
 
   alert(`Student ${student_id} Record Deleted Successfully`);
 }
