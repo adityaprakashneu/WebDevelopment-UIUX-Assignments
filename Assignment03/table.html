@@ -17,7 +17,7 @@
 	<div class="container">
 		<div class="table-content">
 			<table id="myTable">
-				<tr>
+				<tr class="headTable">
 					<th></th>
 					<th>STUDENT</th>
 					<th>ADVISOR</th>
@@ -40,7 +40,7 @@
 					<td>TA</td>
 					<td>12345</td>
 					<td>100%</td>
-					<td id="edit"><button id="edit1" class="edit" onclick="removeRow(this)">Edit</button></td>
+					<td id="edit"><button id="edit1" class="edit" onclick="openEditModal('1')">Edit</button></td>
 					<td id="delete"><button id ="del1" class="del" onclick="removeRow(this)">Delete</button></td>
 				</tr>
 				<tr id="drop1" class="dropDownTextArea">
@@ -65,7 +65,7 @@
 					<td>TA</td>
 					<td>23456</td>
 					<td>100%</td>
-					<td><button id="edit2" class="edit" onclick="removeRow(this)">Edit</button></td>
+					<td><button id="edit2" class="edit" onclick="openEditModal('2')">Edit</button></td>
 					<td><button class="del" onclick="removeRow(this)">Delete</button></td>
 				</tr>
 				<tr id="drop2" class="dropDownTextArea" >
@@ -90,7 +90,7 @@
 					<td>TA</td>
 					<td>34567</td>
 					<td>100%</td>
-					<td><button id="edit3" class="edit" onclick="removeRow(this)">Edit</button></td>
+					<td><button id="edit3" class="edit" onclick="openEditModal('3')">Edit</button></td>
 					<td><button class="del" onclick="removeRow(this)">Delete</button></td>
 				</tr>
 				<tr id="drop3" class="dropDownTextArea">
@@ -112,6 +112,15 @@
 				<button id="button" disabled>SUBMIT SELECTED AWARDS</button>
 				<button id="add" onclick="addNewStudent()">Add New Student</button>
 			<nav class="socialmediaicons"></nav>
+		</div>
+		<div id="editModal" class="modal">
+			<div class="modal-content">
+				<span id="editModalTitle" style="font-weight: bold;"></span><br><br>
+				<div id="studentDetails"></div>
+				<br>
+				<button class="update-btn" onclick="updateStudentDetails()">Update</button>
+				<button class="cancel-btn" onclick="closeEditModal()">Cancel</button>
+			</div>
 		</div>
 	</div>
 

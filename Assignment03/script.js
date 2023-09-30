@@ -44,8 +44,8 @@ function toggleVisibility(divId) {
 // Function to disable the button and reset its CSS
 function disableButton() {
   submitButton.disabled = true;
-  submitButton.style.backgroundColor = '';
-  submitButton.style.color = 'grey';
+  submitButton.style.backgroundColor = '#a9a9a9';
+  submitButton.style.color = 'white';
   submitButton.style.border = '1px solid #d2d2d2'
 }
 
@@ -96,7 +96,7 @@ function addNewStudent() {
                 <td>TA</td>
                 <td>12345</td>
                 <td>100%</td>
-                <td><button id=edit${studentCount} class="edit" onclick="removeRow(this)">Edit</button></td>
+                <td><button id=edit${studentCount} class="edit" onclick="openEditModal(${studentCount})">Edit</button></td>
                 <td><button class="del" onclick="removeRow(this)">Delete</button></td>
             `;
 
@@ -151,7 +151,7 @@ function addNewStudent() {
   alert(`Student ${studentCount} Record Added Successfully`);
 }
 
-//continue from here
+// function to remove record
 function removeRow(button) {
   // Find the parent row and remove it
   const tbody = document.querySelector("table#myTable tbody");
@@ -160,7 +160,7 @@ function removeRow(button) {
   row.firstElementChild.firstElementChild.attributes.checked = 'false';
   console.log("Check here: ")
   console.log(row.firstElementChild.firstElementChild.attributes)
-  
+
   const nextRow = row.nextElementSibling;
   var student_id = nextRow.id;
   student_id = student_id[student_id.length - 1]
@@ -176,4 +176,67 @@ function removeRow(button) {
   }
 
   alert(`Student ${student_id} Record Deleted Successfully`);
+}
+
+// function removeRow(button) {
+//   // Find the parent row and remove it
+//   const tbody = document.querySelector("table#myTable tbody");
+//   const row = button.parentNode.parentNode; // Get the current row to delete
+
+//   row.firstElementChild.firstElementChild.attributes.checked = 'false';
+//   console.log("Check here: ")
+//   console.log(row.firstElementChild.firstElementChild.attributes)
+
+//   const nextRow = row.nextElementSibling;
+//   var student_id = nextRow.id;
+//   student_id = student_id[student_id.length - 1]
+//   tbody.removeChild(row);
+//   tbody.removeChild(nextRow);
+
+//   const checkboxes = document.querySelectorAll(".checkbox");
+//   const atLeastOneChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+//   if (atLeastOneChecked) {
+//     enableButton();
+//   } else {
+//     disableButton();
+//   }
+
+//   alert(`Student ${student_id} Record Deleted Successfully`);
+// }
+
+
+function openEditModal(studentName) {
+  // Get the modal and elements
+  const modal = document.getElementById("editModal");
+  const modalTitle = document.getElementById("editModalTitle");
+  const studentDetails = document.getElementById("studentDetails");
+
+  // Set the modal title
+  modalTitle.textContent = `Edit details of ${studentName}`;
+
+  // Get and display the student's details (replace with actual data)
+  const studentDetailsText = `Student: Student ${studentName}<br>
+  Advisor: Advisor${studentName}<br>
+  Award Status: APPROVED<br>
+  Semester: Fall<br>
+  Type: TA<br>
+  Percentage: 100%`;
+  studentDetails.innerHTML = studentDetailsText;
+
+  // Display the modal
+  modal.style.display = "block";
+}
+
+// Function to close the edit modal
+function closeEditModal() {
+  const modal = document.getElementById("editModal");
+  modal.style.display = "none";
+}
+
+// Function to update student details
+function updateStudentDetails() {
+
+  alert("Student data updated successfully");
+
+  closeEditModal();
 }
