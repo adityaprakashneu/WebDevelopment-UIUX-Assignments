@@ -1,0 +1,19 @@
+// Placeholder Selectors
+%btn-styles {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: none;
+    color: var(--color-1); // Interpolation
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+  
+    img {
+      width: 20px;
+      margin-right: 10px;
+    }
+  }

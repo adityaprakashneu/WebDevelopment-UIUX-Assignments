@@ -1,0 +1,4 @@
+  // Function
+  @function custom-lighten($color, $amount) {
+    @return mix(white, $color, $amount);
+  }

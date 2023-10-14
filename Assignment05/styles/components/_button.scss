@@ -1,0 +1,11 @@
+@import '../base/variables';
+@import '../base/custom';
+
+.btn {
+    @extend %btn-styles;
+    // Additional Features
+    &:focus {
+      background-color: var(--background-color-2);
+    }
+  }
+  
