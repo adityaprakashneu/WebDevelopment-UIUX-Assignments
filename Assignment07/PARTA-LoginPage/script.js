@@ -67,7 +67,7 @@ $(document).ready(function () {
     console.log(urlParams)
     const value = urlParams.get('username');
     console.log(value)
-    document.getElementById("name").textContent = "Logged in as: " + value;
+    document.getElementById("name").textContent = "Logged in as: " + value.toUpperCase();
 
     function validateInput(input, inputId, errorMessageId) {
         const inputValue = $(input).val();

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .login-container {
-    background-color: #f5f5f5;
+    background-color: #34495e;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -19,7 +19,7 @@ body {
 
 h1 {
     font-size: 24px;
-    color: #333;
+    color: #96d7c6;
     margin-bottom: 20px;
 }
 
@@ -32,7 +32,7 @@ h1 {
 label {
     text-align: left;
     font-weight: bold;
-    color: #555;
+    color: #5aa7a7;
     margin-bottom: 5px;
 }
 
@@ -44,7 +44,8 @@ input {
 }
 
 .error-message {
-    color: red;
+    color: #f14666;
+    /* font-weight: bold; */
     margin-top: 5px;
     font-size: 14px;
     text-align: left;
@@ -70,18 +71,8 @@ input {
     background-color: #0056b3;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.calculator-container {
-    background-color: white;
+.calculator {
+    background-color: #34495e;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -131,9 +122,26 @@ button {
     margin: 10px;
     cursor: pointer;
     border-radius: 5px;
-    width: 100px;
+    width: 90px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    font-weight: bold;
+    color: #34495e;
+}
+
+#add:hover {
+    background-color: #9cb898;
+}
+
+#subtract:hover {
+    background-color: #c18c5d;
+}
+
+#multiply:hover {
+    background-color: #cac6e1;
+}
+
+#divide:hover {
+    background-color: #ffcdaa;
 }
