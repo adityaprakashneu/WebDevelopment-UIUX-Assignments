@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
-import DailyWeather from './DailyWeather';
 import { TextField } from '@material-ui/core'
 import axios from 'axios';
 import moment from 'moment';
@@ -22,7 +20,7 @@ class Weather extends Component {
 
     }
     getWeatherData = () => {
-        axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=imperial&appid=90e70cc5cf7a47cabc17c670591874ab`)
+        axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&units=imperial&appid=47f9608553b76971e50fe1ff3fa3e530`)
             .then(res => {
                 const weatherData = res?.data?.list;
                 localStorage.setItem('location', JSON.stringify(res?.data?.city));
